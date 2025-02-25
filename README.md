@@ -12,7 +12,7 @@
   ```
 - Activate the environment:  
   ```bash
-  conda activate my_env/
+  conda activate venv/
   ```
 
 ### **3️⃣ Initialize Git & Push Code**  
