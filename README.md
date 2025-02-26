@@ -72,3 +72,46 @@ Inside the `src/` directory, create the following subdirectories:
 - `exception.py` (Handles custom exceptions)  
 - `logger.py` (Manages logging & debugging)  
 - `utils.py` (Contains helper functions)  
+
+# **Tutorial-3: Structuring a Machine Learning Project**
+
+## **Step 1: Project Setup**
+- Create a **notebook folder** for organizing your Jupyter notebooks.
+- Inside the notebook folder, create a **data folder** to store your dataset.
+
+## **Step 2: Notebook Creation**
+- Create two Jupyter notebooks inside the notebook folder:
+  1. **EDA Notebook** → For exploratory data analysis.
+  2. **Model Training Notebook** → For training machine learning models.
+
+## **Step 3: Install Required Libraries**
+- Add the following dependencies to `requirements.txt`:
+  ```
+  catboost  
+  xgboost  
+  scikit-learn  
+  ```
+- Install them using:
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+## **Step 4: Run the Jupyter Notebooks**
+- Open and execute the notebooks to ensure proper workflow.
+- Perform data exploration in the **EDA notebook**.
+- Train models in the **Model Training notebook**.
+
+## **Step 5: Modular Coding Approach**
+- Refactor the project using **modular coding techniques**:
+  - Define **data preprocessing functions**.
+  - Create a separate **module for model training**.
+  - Ensure reusability by organizing functions properly.
+
+## **Step 6: Version Control with Git**
+- Upload all the updated files to GitHub.
+- Organize them into two sections:
+  - **EDA**
+  - **Problem Statements**
+
+
+
