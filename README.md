@@ -73,19 +73,19 @@ Inside the `src/` directory, create the following subdirectories:
 - `logger.py` (Manages logging & debugging)  
 - `utils.py` (Contains helper functions)  
 
-# **Tutorial-3: Structuring a Machine Learning Project**
+# **📌 Tutorial 3: Structuring a Machine Learning Project**
 
-## **Step 1: Project Setup**
-- Create a **notebook folder** for organizing your Jupyter notebooks.
-- Inside the notebook folder, create a **data folder** to store your dataset.
+### **1️⃣ Project Setup**
+- Create a **notebook** folder to organize your Jupyter notebooks.
+- Inside the notebook folder, create a **data** folder to store your dataset.
 
-## **Step 2: Notebook Creation**
-- Create two Jupyter notebooks inside the notebook folder:
-  1. **EDA Notebook** → For exploratory data analysis.
-  2. **Model Training Notebook** → For training machine learning models.
+### **2️⃣ Create Jupyter Notebooks**
+- Inside the notebook folder, create two Jupyter notebooks:
+  1. **EDA Notebook** → Perform exploratory data analysis.
+  2. **Model Training Notebook** → Train and evaluate machine learning models.
 
-## **Step 3: Install Required Libraries**
-- Add the following dependencies to `requirements.txt`:
+### **3️⃣ Install Dependencies**
+- Add the required libraries to `requirements.txt`:
   ```
   catboost  
   xgboost  
@@ -96,22 +96,23 @@ Inside the `src/` directory, create the following subdirectories:
   pip install -r requirements.txt
   ```
 
-## **Step 4: Run the Jupyter Notebooks**
-- Open and execute the notebooks to ensure proper workflow.
-- Perform data exploration in the **EDA notebook**.
-- Train models in the **Model Training notebook**.
+### **4️⃣ Run Jupyter Notebooks**
+- Open and execute the notebooks to verify the workflow.
+- Conduct data exploration in the **EDA notebook**.
+- Train and evaluate models in the **Model Training notebook**.
 
-## **Step 5: Modular Coding Approach**
-- Refactor the project using **modular coding techniques**:
+### **5️⃣ Modular Coding Approach**
+- Refactor the codebase for better maintainability:
   - Define **data preprocessing functions**.
   - Create a separate **module for model training**.
-  - Ensure reusability by organizing functions properly.
+  - Structure code for **reusability and readability**.
 
-## **Step 6: Version Control with Git**
-- Upload all the updated files to GitHub.
-- Organize them into two sections:
+### **6️⃣ Version Control with Git**
+- Commit and push all updated files to GitHub.
+- Organize them into separate sections:
   - **EDA**
   - **Problem Statements**
+
 
 
 
