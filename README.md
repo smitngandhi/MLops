@@ -113,6 +113,58 @@ Inside the `src/` directory, create the following subdirectories:
   - **EDA**
   - **Problem Statements**
 
+=======
+ 
+  # **📌 Tutorial 4: Data Ingestion**
+
+## **1️⃣ Data Ingestion Configuration**
+- A `DataIngestionConfig` dataclass is created to define file paths for storing raw, train, and test data inside an `artifacts/` directory.
+- Paths include:
+  - `artifacts/data.csv` → Raw dataset
+  - `artifacts/train.csv` → Training dataset
+  - `artifacts/test.csv` → Testing dataset
+
+## **2️⃣ Implementing the Data Ingestion Class**
+- A `DataIngestion` class is created with:
+  - A constructor (`__init__`) to initialize the configuration.
+  - A method `initiate_data_ingestion()` to load, split, and store the dataset.
+
+## **3️⃣ Data Ingestion Workflow**
+The `initiate_data_ingestion()` method performs the following steps:
+
+### **🔹 Step 1: Load the Dataset**
+- Reads the dataset from `notebook/data/stud.csv` using `pandas`.
+- Logs the successful loading of the dataset.
+
+### **🔹 Step 2: Create Artifacts Directory**
+- Uses `os.makedirs()` to ensure the `artifacts/` directory exists.
+- Logs the creation of the directory.
+
+### **🔹 Step 3: Save Raw Data**
+- Stores the loaded dataset as `data.csv` inside `artifacts/`.
+- Logs the saving of raw data.
+
+### **🔹 Step 4: Train-Test Split**
+- Splits the dataset into training (80%) and testing (20%) sets using `train_test_split()`.
+- Saves the split data as `train.csv` and `test.csv`.
+- Logs the successful completion of data ingestion.
+
+## **4️⃣ Exception Handling & Logging**
+- A `try-except` block is implemented to handle errors.
+- Custom exceptions are raised using `CustomException` from `src.exception`.
+- Logging is performed using `src.logger` to track progress and issues.
+
+## **5️⃣ Running the Data Ingestion Pipeline**
+- The script runs the data ingestion process when executed as the main script:
+  ```python
+  if __name__ == "__main__":
+      obj = DataIngestion()
+      obj.initiate_data_ingestion()
+  ```
+- This triggers the ingestion pipeline, ensuring data is correctly processed and stored.
+
+<<<<<<< HEAD
+
   # **📌 Tutorial 6: Data Transformation**
 
 ## **1️⃣ Overview**
